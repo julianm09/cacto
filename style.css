@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    background-color: #F7F2DD;
+}
+
+.product{
+    width: 125px;
+    margin: 0 50px 0 50px ;
+    border-radius: 10px;
+    
+    
+}
+
+.container{
+    margin: 25px 0 25px 0;
+    background: chartrese;
+    height: 125px;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    
+    
+
+}
+
+.scroll{
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 300vw;
+    animation: animateScroll 8s linear infinite;
+}
+
+@keyframes animateScroll {
+    from {
+      left: 0px;
+    }
+    100% {
+      left: -900px;
+    }
+   
+  }
+
+  .container:hover .scroll{
+
+      background-color: #F7C025;
+      transition: 1s;
+      cursor: pointer;
+  }
+
+  
+.container-2{
+    background: chartrese;
+    margin: 25px 0 25px 0;
+    height: 125px;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    
+
+}
+
+.scroll-2{
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 300vw;
+    animation: animateScroll2 8s linear infinite;
+}
+
+@keyframes animateScroll2 {
+    from {
+      left: -900px;
+    }
+    100% {
+      left: 0px;
+    }
+   
+  }
+
+  .container-2:hover .scroll-2{
+
+      background-color: #569C88;
+      transition: 1s;
+      cursor: pointer;
+
+  }
+
+  @keyframes colorSwap {
+    from {
+        background-color: #FB936C;
+        
+    }
+
+    33%{
+        background-color: #569C88;
+    }
+
+    66%{
+        background-color: #F7C025;
+    }
+    100% {
+        background-color: #FB936C;
+    }
+   
+  }
+
+  header{
+
+      height: 125px;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+            
+
+  }
+
+  .logo{
+      width: 250px;
+  }
