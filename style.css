@@ -10,6 +10,7 @@ body{
     width: 125px;
     margin: 0 50px 0 50px ;
     border-radius: 10px;
+    background-repeat: repeat-x;
     
     
 }
@@ -31,7 +32,7 @@ body{
     position: relative;
     align-items: center;
     display: flex;
-    width: 300vw;
+    width: 10000px;
     animation: animateScroll 8s linear infinite;
 }
 
@@ -48,7 +49,7 @@ body{
   .container:hover .scroll{
 
       background-color: #F7C025;
-      transition: 1s;
+      transition: 0s;
       cursor: pointer;
   }
 
@@ -58,6 +59,7 @@ body{
     margin: 25px 0 25px 0;
     height: 125px;
     width: 100vw;
+    
     overflow-x: hidden;
     overflow-y: hidden;
     
@@ -69,7 +71,7 @@ body{
     position: relative;
     align-items: center;
     display: flex;
-    width: 300vw;
+    width: 3000px;
     animation: animateScroll2 8s linear infinite;
 }
 
@@ -86,7 +88,7 @@ body{
   .container-2:hover .scroll-2{
 
       background-color: #569C88;
-      transition: 1s;
+      transition: 0s;
       cursor: pointer;
 
   }
@@ -123,4 +125,37 @@ body{
 
   .logo{
       width: 250px;
+      margin: 50px;
   }
+
+  .square{
+      width: 10000px;
+      top: 250px;
+      height: 75px;;
+      background-color: #FB936C;
+      position: absolute;
+  }
+
+  .square-2{
+    width: 10000px;
+    top: 550px;
+    height: 75px;;
+    background-color: #2B9041;
+    position: absolute;
+}
+
+.square-3{
+    width: 10000px;
+    top: 850px;
+    height: 75px;;
+    background-color: #FB936C;
+    position: absolute;
+}
+
+.square-4{
+  width: 10000px;
+  top: 1150px;
+  height: 75px;;
+  background-color: #2B9041;
+  position: absolute;
+}
