@@ -4,11 +4,51 @@ body{
 
     height: 100vh;
     background-color: #F7F2DD;
+    overflow-x: hidden;
+    font-family: 'Markazi Text', serif;
 }
+
+/* font-family: 'Holtwood One SC', serif;
+font-family: 'Markazi Text', serif;
+font-family: 'Monoton', cursive; */
+
+.square{
+    width: 10000px;
+    top: 275px;
+    height: 75px;;
+    background-color: #FB936C;
+    position: absolute;
+}
+
+.square-2{
+  width: 10000px;
+  top: 575px;
+  height: 75px;;
+  background-color: #2B9041;
+  position: absolute;
+}
+
+.square-3{
+  width: 10000px;
+  top: 875px;
+  height: 75px;;
+  background-color: #FB936C;
+  position: absolute;
+}
+
+.square-4{
+width: 10000px;
+top: 1175px;
+height: 75px;;
+background-color: #2B9041;
+position: absolute;
+}
+
+
 
 .product{
     width: 125px;
-    margin: 0 50px 0 50px ;
+    margin: 0 100px 0 100px ;
     border-radius: 10px;
     background-repeat: repeat-x;
     
@@ -41,7 +81,7 @@ body{
       left: 0px;
     }
     100% {
-      left: -900px;
+      left: -970px;
     }
    
   }
@@ -77,7 +117,7 @@ body{
 
 @keyframes animateScroll2 {
     from {
-      left: -900px;
+      left: -970px;
     }
     100% {
       left: 0px;
@@ -114,48 +154,46 @@ body{
 
   header{
 
-      height: 125px;
+      height: 150px;
       width: 100vw;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: left;
             
 
   }
 
   .logo{
       width: 250px;
-      margin: 50px;
+      margin: 150px;
   }
 
-  .square{
-      width: 10000px;
-      top: 250px;
-      height: 75px;;
-      background-color: #FB936C;
-      position: absolute;
-  }
+.logo-container{
 
-  .square-2{
-    width: 10000px;
-    top: 550px;
-    height: 75px;;
-    background-color: #2B9041;
-    position: absolute;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
 }
 
-.square-3{
-    width: 10000px;
-    top: 850px;
-    height: 75px;;
-    background-color: #FB936C;
-    position: absolute;
+.navbar{
+
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.square-4{
-  width: 10000px;
-  top: 1150px;
-  height: 75px;;
-  background-color: #2B9041;
-  position: absolute;
+.link{
+    margin: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color:#FB936C;
+}
+
+.link:hover{
+    color:  #E86292 ;
+    cursor: pointer;
 }
