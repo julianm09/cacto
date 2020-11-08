@@ -38,22 +38,21 @@
         <a class="menu-close"><i  data-feather="x"></i></a>
     </div>
 
-    
-
 </div>
 
 <script>
     const menu = document.querySelector('.menu')
     const overlay = document.querySelector('.overlay')
     const close = document.querySelector('.menu-close')
-
+    function noScroll() {
+  window.scrollTo(0, 0);
+}
     menu.addEventListener('click', () =>{
 
         if(overlay.style.display='none'){
             overlay.style.display='flex'
-        } else{
-            overlay.style.display='none'
-        }
+            window.addEventListener('scroll', noScroll);
+        } 
         
     })
 
@@ -61,9 +60,8 @@
 
 if(overlay.style.display='flex'){
     overlay.style.display='none'
-} else{
-    overlay.style.display='none'
-}
+    window.removeEventListener('scroll', noScroll);
+} 
 
 })
 </script>

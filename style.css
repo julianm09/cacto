@@ -44,6 +44,10 @@ background-color: #2B9041;
 position: absolute;
 }
 
+.overlay{
+    display: none;
+}
+
 
 
 .product{
