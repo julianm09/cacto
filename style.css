@@ -8,6 +8,18 @@ body{
     font-family: 'Markazi Text', serif;
 }
 
+.pink{
+    color: #E86292;
+}
+
+.yellow{
+    color: #F7C025;
+}
+
+.blue{
+    color: #569C88; 
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -45,6 +57,14 @@ top: 1225px;
 height: 75px;;
 background-color: #2B9041;
 position: absolute;
+}
+
+.square-5{
+    width: 10000px;
+    top: 1500px;
+    height: 75px;;
+    background-color: #FB936C;
+    position: absolute;
 }
 
 .overlay{
@@ -221,13 +241,18 @@ display: none;
     margin: 0 5vw 0 5vw ;
     font-size: 24px;
     font-weight: bold;
-    color: #FB936C ;
+    color:;
     text-decoration: none;
     
 }
 
+a{
+    text-decoration: none;
+
+}
+
 .link:hover{
-    color:  #E86292 ;
+    color:  #2B9041 ;
     cursor: pointer;
 }
 
@@ -269,8 +294,7 @@ display: none;
         top: 0;
         z-index: 300;
         display: none;
-        transition: ;
-over
+
 
     }
 
@@ -280,6 +304,37 @@ over
     }
 
 
+    .mobile-links{
+        margin-top: 25px;
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        background-color: ;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: ;
+        align-items: center;
+        color: antiquewhite;
+        font-size: 5vh
+    }
+
+    .mobile-link{
+        color: #F7F2DD ;
+        margin: 2vh;
+        font-size: 6vh;
+    }
+
+    .social{
+        background-color: ;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        height: ;
+    }
 
 
   }
@@ -288,6 +343,38 @@ over
 
 
 
+
+  .card-1{
+
+    width: 100vw;
+    height: 350px;
+    background-color: #E86292;
+
+    position: absolute;
+    z-index: -100;
+    text-align: center;
+  
+ 
+
+  }
+
+  .about-cacto{
+      margin: 50px;
+      font-size: 24px;
+      color:#F7F2DD;
+
+  }
+
+  .snapshot{
+      width: 500px;
+      z-index: 400;
+      
+  }
+
+  .snapshot:hover{
+    width: 400px;
+
+}
 
 
 
