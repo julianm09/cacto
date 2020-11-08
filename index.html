@@ -44,14 +44,14 @@
     const menu = document.querySelector('.menu')
     const overlay = document.querySelector('.overlay')
     const close = document.querySelector('.menu-close')
-    function noScroll() {
-  window.scrollTo(0, 0);
-}
+    const body = document.querySelector('body')
+
     menu.addEventListener('click', () =>{
 
         if(overlay.style.display='none'){
             overlay.style.display='flex'
-            window.addEventListener('scroll', noScroll);
+            body.style.overflowY='hidden'
+
         } 
         
     })
@@ -60,7 +60,8 @@
 
 if(overlay.style.display='flex'){
     overlay.style.display='none'
-    window.removeEventListener('scroll', noScroll);
+    body.style.overflowY='auto'
+
 } 
 
 })

@@ -8,6 +8,9 @@ body{
     font-family: 'Markazi Text', serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 /* font-family: 'Holtwood One SC', serif;
 font-family: 'Markazi Text', serif;
 font-family: 'Monoton', cursive; */
@@ -260,13 +263,14 @@ display: none;
     
     .overlay{
         width: 100%;
-        height: 100%;
+        height: 150%;
         position: absolute;
         background-color: #E86292;
         top: 0;
         z-index: 300;
         display: none;
         transition: ;
+over
 
     }
 
