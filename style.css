@@ -14,7 +14,7 @@ font-family: 'Monoton', cursive; */
 
 .square{
     width: 10000px;
-    top: 275px;
+    top: 325px;
     height: 75px;;
     background-color: #FB936C;
     position: absolute;
@@ -22,7 +22,7 @@ font-family: 'Monoton', cursive; */
 
 .square-2{
   width: 10000px;
-  top: 575px;
+  top: 625px;
   height: 75px;;
   background-color: #2B9041;
   position: absolute;
@@ -30,7 +30,7 @@ font-family: 'Monoton', cursive; */
 
 .square-3{
   width: 10000px;
-  top: 875px;
+  top: 925px;
   height: 75px;;
   background-color: #FB936C;
   position: absolute;
@@ -38,7 +38,7 @@ font-family: 'Monoton', cursive; */
 
 .square-4{
 width: 10000px;
-top: 1175px;
+top: 1225px;
 height: 75px;;
 background-color: #2B9041;
 position: absolute;
@@ -155,45 +155,138 @@ position: absolute;
   header{
 
       height: 150px;
-      width: 100vw;
+      width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: left;
+      flex-wrap: ;
+      margin: 0px 0 75px 0;
+      
+
             
 
   }
 
+
+  .navbar-mobile{
+    width: 1000px;;
+    height: 50px;
+
+    position: absolute;
+display: none;
+    top: 150px;
+}
+
+
   .logo{
       width: 250px;
-      margin: 150px;
+      margin-left: ;
+      display: flex;
+      justify-content: center;
   }
 
 .logo-container{
-
-    width: 50vw;
+    background-color: ;
+    width: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    height: 150px;
 
 }
 
 .navbar{
 
-    width: 50vw;
+
+    width: 100%;
     display: flex;
+
     align-items: center;
     justify-content: center;
-    height: 100%;
+
+    
+    height: 150px;
+    left: 0;
+    background-color:;
+   
+    color: ;
 }
 
 .link{
-    margin: 100px;
+    margin: 0 5vw 0 5vw ;
     font-size: 24px;
     font-weight: bold;
-    color:#FB936C;
+    color: #FB936C ;
+    text-decoration: none;
+    
 }
 
 .link:hover{
     color:  #E86292 ;
     cursor: pointer;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: ;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        width: 100%;;
+        height: 50px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: ;
+        top: 150px;
+    }
+
+    .menu{
+        color: #0aaf54;
+        z-index: 0;
+        cursor: pointer;
+    }
+    
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #E86292;
+        top: 0;
+        z-index: 300;
+        display: none;
+        transition: ;
+
+    }
+
+    .menu-close{
+        color: #F7F2DD;
+        cursor: pointer;
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,16 +12,62 @@
 
 <header>
     <div class="logo-container">
-        <img class="logo" src="./img/logo.png">
+        <a href="./index.html"><img class="logo" src="./img/logo.png"></a>
     </div>
 
     <div class="navbar">
-        <a class="link">About</a>
+        <a href="./about.html"  class="link">About</a>
         <a class="link">Contact</a>
         <a class="link">Location</a>
     </div>
     
+
 </header>
+
+<div class="navbar-mobile">
+    
+    <a class="menu"><i  data-feather="menu"></i></a>
+</div>
+
+<div class="overlay">
+    <div class="logo-container">
+        <a href="./index.html"><img class="logo" src="./img/logo-beige.png"></a>
+    </div>
+
+    <div class="navbar-mobile">
+        <a class="menu-close"><i  data-feather="x"></i></a>
+    </div>
+
+    
+
+</div>
+
+<script>
+    const menu = document.querySelector('.menu')
+    const overlay = document.querySelector('.overlay')
+    const close = document.querySelector('.menu-close')
+
+    menu.addEventListener('click', () =>{
+
+        if(overlay.style.display='none'){
+            overlay.style.display='flex'
+        } else{
+            overlay.style.display='none'
+        }
+        
+    })
+
+    close.addEventListener('click', () =>{
+
+if(overlay.style.display='flex'){
+    overlay.style.display='none'
+} else{
+    overlay.style.display='none'
+}
+
+})
+</script>
+
 
 <div class="square"></div>
 <div class="square-2"></div>
@@ -251,6 +297,9 @@
     </div>
 </a>
 
-    
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+  </script>
 </body>
 </html>
