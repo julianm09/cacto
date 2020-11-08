@@ -230,23 +230,36 @@ function init() {
         }
     );
     
-    document.addEventListener("mousedown", onMouseDown);
+/*     document.addEventListener("mousedown", onMouseDown);
     document.addEventListener("touchstart", onMouseDown);
     document.addEventListener("mouseup", onMouseUp);
     document.addEventListener("touchend", onMouseUp);
     document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("touchmove", onMouseMove);
+    document.addEventListener("touchmove", onMouseMove); */
 
     render();   
 }
 
+const animate = function () {
+				requestAnimationFrame( animate );
+
+				mesh.rotation.x += 0.0;
+				mesh.rotation.y += 0.0003;
+
+				renderer.render( scene, camera );
+			};
+
 function render() {
+
     requestAnimationFrame( render ); 
     renderer.render(scene, camera); 
+    animate();
 }
 
 
-// マウスを押したとき
+
+
+/* // マウスを押したとき
 function onMouseDown(event) {
     isMouseDown = true;
 }
@@ -280,7 +293,7 @@ function getMouseY(event) {
         return event.clientY;
     else
         return event.touches[0].clientY;
-}
+} */
 
 window.addEventListener('DOMContentLoaded', init);
 
