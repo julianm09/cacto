@@ -347,7 +347,7 @@ a{
   .card-1{
 
     width: 100vw;
-    height: 350px;
+    height: 50vh;
     background-color: #E86292;
 
     position: absolute;
@@ -362,19 +362,10 @@ a{
       margin: 50px;
       font-size: 24px;
       color:#F7F2DD;
+      text-align: center;
 
   }
 
-  .snapshot{
-      width: 500px;
-      z-index: 400;
-      
-  }
-
-  .snapshot:hover{
-    width: 400px;
-
-}
 
 
 
