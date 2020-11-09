@@ -368,9 +368,116 @@ a{
 
 
 
+  .contain-doodle{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.doodle{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.face-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+
+    animation: flicker 12s infinite;
+   
+    
+}
+
+.face-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: flicker 12s infinite;
+    animation-delay: 2s;
+    
+}
+
+.face-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: flicker 12s infinite;
+    animation-delay: 4s;
+    
+}
+
+.face-4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: flicker 12s infinite;
+    animation-delay: 6s;
+    
+}
+
+.face-5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: flicker 12s infinite;
+    animation-delay: 8s;
+    
+}
+
+.face-6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: flicker 12s infinite;
+    animation-delay: 10s;
+    
+}
+
+@keyframes flicker {
+    0%{
+        opacity: 100;
+    }
+
+
+    16%{
+        opacity:100%;
+
+    }
+    17%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 0%;
+   
+    }
+}
 
 
 
+
+.cacto-pink{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 

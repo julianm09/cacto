@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- start of navbar -->
+    <header>
+        <div class="logo-container">
+            <a href="./index.html"><img class="logo" src="./img/cacto-logo.svg"></a>
+        </div>
+    
+        <div class="navbar">
+            <a href="./about.html"  class="link yellow">About</a>
+            <a class="link blue">Contact</a>
+            <a href="./location.html" class="link pink">Location</a>
+        </div>
+        
+    
+    </header>
+    
+    <div class="navbar-mobile">
+        
+        <a class="menu"><i  data-feather="menu"></i></a>
+    </div>
+    
+    <div class="overlay">
+        <div class="logo-container">
+            <a href="./index.html"><img class="logo" src="./img/cacto-logo-sand.svg"></a>
+        </div>
+    
+        <div class="navbar-mobile">
+            <a class="menu-close"><i  data-feather="x"></i></a>
+        </div>
+    
+        <div class="mobile-links">
+    
+            <a class="mobile-link" href="./about.html">About</a>
+            <a class="mobile-link" href="#">Contact</a>
+            <a class="mobile-link" href="./location.html">Location</a>
+         
+            <a class="mobile-link" href="#"><i class="mobile-link" data-feather="instagram"></i></a>
+      
+        </div>
+    
+        
+    
+    </div>
+    
+    <script>
+        const menu = document.querySelector('.menu')
+        const overlay = document.querySelector('.overlay')
+        const close = document.querySelector('.menu-close')
+        const body = document.querySelector('body')
+    
+        menu.addEventListener('click', () =>{
+    
+            if(overlay.style.display='none'){
+                overlay.style.display='flex'
+                body.style.overflowY='hidden'
+    
+            } 
+            
+        })
+    
+        close.addEventListener('click', () =>{
+    
+    if(overlay.style.display='flex'){
+        overlay.style.display='none'
+        body.style.overflowY='auto'
+    
+    } 
+    
+    })
+    </script>
+    
+    <!-- end of navbar -->
+
+
+
+
+
+
+
+<div class="contain-doodle">
+
+    <div class="doodle">
+    <img class="cacto-pink" width="300px" src="./img/cact-o-pink.svg">
+    <img class="face-1" width="300px" src="./img/face-4.png">
+    <img class="face-2" width="300px" src="./img/face.png">
+    <img class="face-3" width="300px" src="./img/face-5.png">
+    <img class="face-4" width="300px" src="./img/face-2.png">
+    <img class="face-5" width="300px" src="./img/face-6.png">
+    <img class="face-6" width="300px" src="./img/face-3.png">
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+  </script>
+</body>
+</html>
