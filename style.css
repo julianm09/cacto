@@ -82,7 +82,7 @@ position: absolute;
     
 }
 
-.container{
+.container-1{
     margin: 25px 0 25px 0;
     background: chartrese;
     height: 125px;
@@ -95,7 +95,7 @@ position: absolute;
 
 }
 
-.scroll{
+.scroll-1{
     position: relative;
     align-items: center;
     display: flex;
@@ -113,7 +113,7 @@ position: absolute;
    
   }
 
-  .container:hover .scroll{
+  .container-1:hover .scroll-1{
 
       background-color: #F7C025;
       transition: 0s;
@@ -372,9 +372,11 @@ a{
     position: relative;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 315px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: ;
 }
 
 
@@ -382,6 +384,8 @@ a{
     width: 300px;
     height: 300px;
     position: relative;
+    right: 400px;
+   
 }
 
 .face-1{
@@ -483,3 +487,18 @@ a{
 
 
 
+.location-container{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    top: 315px;
+    background: #FB936C;
+    border-radius: 10px;
+}
+
+.store-front{
+    position: relative;
+    left: 150px;
+    width: 600px;
+    border-radius: 10px;
+}
