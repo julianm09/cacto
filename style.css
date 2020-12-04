@@ -48,11 +48,11 @@ font-family: 'Monoton', cursive; */
 }
 
 .square-4{
-width: 10000px;
-top: 1225px;
-height: 75px;;
-background-color: #2B9041;
-position: absolute;
+    width: 10000px;
+    top: 1225px;
+    height: 75px;;
+    background-color: #2B9041;
+    position: absolute;
 }
 
 .square-5{
@@ -85,10 +85,6 @@ position: absolute;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
-
-    
-    
-
 }
 
 .scroll-1{
@@ -97,6 +93,22 @@ position: absolute;
     display: flex;
     width: 10000px;
     animation: animateScroll 8s linear infinite;
+}
+
+button{
+    transition: 0.2s;
+
+}
+
+button:hover{
+    box-shadow: 4px 4px 10px grey;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+
 }
 
 @keyframes animateScroll {
@@ -170,7 +182,7 @@ position: absolute;
         background-color: #F7C025;
     }
     100% {
-        background-color: #FB936C;
+        background-color: #FB936C;Fover
     }
    
   }
@@ -191,6 +203,7 @@ position: absolute;
       display: flex;
       flex-wrap: ;
       margin: 0px 0 75px 0;
+      z-index: 1000;
       
   }
 
@@ -210,6 +223,7 @@ display: none;
       margin-left: ;
       display: flex;
       justify-content: center;
+      z-index: 1000;
   }
 
 .logo-container{
@@ -235,7 +249,7 @@ display: none;
     height: 150px;
     left: 0;
     background-color:;
-   
+    z-index: 1000;
     color: ;
 }
 
@@ -279,7 +293,7 @@ a{
     }
 
     .menu{
-        color: #0aaf54;
+        color: #E86292;
         z-index: 0;
         cursor: pointer;
     }
@@ -290,7 +304,7 @@ a{
         position: absolute;
         background-color: #E86292;
         top: 0;
-        z-index: 300;
+        z-index: 1000;
         display: none;
 
 
@@ -306,7 +320,7 @@ a{
         margin-top: 25px;
         position: absolute;
         width: 100%;
-        height: 700px;
+        height: 100vh;
         background-color: ;
         top: 200px;
         display: flex;
@@ -347,17 +361,23 @@ a{
     /* start about page */
         /* start about page */
 
+        .about-page{
+            width: 100vw;
+      
+            
+
+        }
+
   .card-1{
 
     width: 100vw;
     height: 50vh;
     background-color: #E86292;
-
     position: absolute;
     z-index: -100;
     text-align: center;
-  
- 
+    display: flex;
+    justify-content: center;
 
   }
 
@@ -366,6 +386,7 @@ a{
       font-size: 24px;
       color:#F7F2DD;
       text-align: center;
+      width: 400px
 
   }
 
@@ -382,49 +403,27 @@ a{
         /* start product page */
 
 .product-page{
-
-    height: calc(100% - 150px);
-    width: 100vw;
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-}
-
-.product-container{
-    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;    width: 100vw;
-    font-family: 'Holtwood One SC', serif;
-    color: #569C88 ;
+    width:100vw;
 
 
 }
+
+
 
 .product-large{
-    width: 300px;
-    height: 300px;
+    width: 80vw;
+  max-width: 300px;
     border-radius: 10px;
     z-index: 300;
 }
 
-.product-details{
-    width: 100vw;
-    padding: 50px;
-    position: relative;
-    top: -50px;
-    background-color: #569C88;
-    color: #F7F2DD;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.product-description{
-    width: 300px;
-}
+
+
 
 .controls{
     width: 300px;
@@ -442,10 +441,12 @@ a{
     width: 75px;
     height: 75px;
     margin: 12.5px;
-    background-color: #569C88;
+    background:  #569C88;
+ 
     color: #F7F2DD;
     border: none;
     border-radius: 10px;
+
 }
 
 .cart{
@@ -454,19 +455,74 @@ a{
 
 }
 
+.product-title{
+    color: #569C88;
+    font-size: 36px;
+    font-family: 'Holtwood One SC', serif;
+}
 
-@media only screen and (min-width: 800px) {
-    .product-details{
-        background-color: blue;
-        position: relative;
-        top: -250px;
-        height: 200px;
+.product-description{
+    width: 280px;
+    font-size: 24px;
+    position: relative;
+ 
+
+
+}
+
+.banner{
+    width: 100vw;
+    background-color:  #569C88;
+    height: 200px;
+    position: absolute;
+    top: 320px;
+    z-index: -100;
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .product-page{
+
+
+
+
+
+
+        width:85vw
+     
     }
+
     .product-description{
-        position: relative;
-        left: 350px;
-        top: -50px;
+    position: relative;
+    left: 340px;
+    top: -325px;
+    color: #F7F2DD;
+
+    
     }
+
+    .controls{
+        position: relative;
+left: 335px;
+bottom: 375px;
+
+    }
+    
+    .product-title{
+        position: relative;
+        left: 280px;
+    
+
+    }
+
+    
+
 
 
 }
@@ -519,4 +575,349 @@ font-family: 'Monoton', cursive;
     /* start location page */
         /* start location page */
 
+
+.footer{
+    height: 175px;
+    width: 100px;
+    background: #E86292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    color: #F7F2DD;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    border-radius:0px 10px 0px  0px;
+
+
+}
+
+.icon{
+    margin: 10px 0px 10px 0px;
+    color: #F7F2DD;;
+}
+
+
+.copy{
+
+
+    margin: 10px 0px 10px 0px;
+}
+
+.nav-copy{
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+}
+
+.nav-icons{
+    top: 100px;
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    .footer{
+        display: none;
+    }
+}
+
+
+
+/* start location page */
+    /* start location page */
+        /* start location page */
+
+
+
+    .location-page{
+        background-color: ;
+        width: 100vw;
+        height: 200px;
+
+    }
+
+.location-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Holtwood One SC', serif;
+    color: #569C88;
+}
+.location-container {
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-image {
+    width: 80vw;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 350px;
+    box-shadow: 0px 4px 10px rgb(45, 45, 45);
+}
+.location-bar {
+    background-color: #569C88;
+    height: 600px;
+    width: 100vw;
+    position: absolute;
+    top: 415px;
+    z-index: -100;
+}
+.location-text {
+    text-align: center;
+    margin-top: 30vh;
+    color: #F7F2DD;
+    font-family: 'Markazi Text', serif;
+    font-size: 28px;
+}
+.map {
+    border-radius: 10px;
+    max-width: 555px;
+    width: 80vw;
+    margin-bottom: 200px;
+    position: relative;
+    top: 150px;
+}
+
+.find-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Holtwood One SC', serif;
+    color: #569C88;
+    position: relative;
+    top: 750px;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 800px) {
+    .location-image {
+        max-width: 550px;
+        position: relative;
+        left: -250px;
+        top: -150px;
+  
+    }
+    .location-bar {
+        height: 350px;
+    }
+    .location-text {
+        margin: 40px 0 0 600px;
+    }
+    .location-name {
+        margin: 200px 0 0 590px ;
+    }
+
+    .find-us{
+        position: relative;
+        top: 500px;
+        animation: 3s color-change infinite;
+    }
+
+    @keyframe color-change{
+
+    }
+    
+    .map {
+
+        width: 1050px;
+        height: 500px;
+        top: -150px;
+        max-width: none;
+    }
+}
+
+
+
+/* start contact page */
+    /* start contact page */
+        /* start contact page */
+
+
+        .contact-page{
+            width: 100vw;
+            display: flex;
+            z-index: 0;
+            height: 100vh;
+            justify-content: center;
+        
+        }
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    background-color: #569C88;
+    height: 750px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+}
+
+form{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-form-text {
+    text-align: center;
+    position: relative;
+    color: #F7F2DD;
+    font-family: 'Markazi Text', serif;
+    font-size: 28px;
+    top: 80px; 
+}
+.contact-form-text-input-a {
+    position: relative;
+    width: 300px;
+    height: 25px;
+    top: 80px;
+    border-radius: 10px;
+    border: none;
+}
+.contact-form-text-input-b {
+    position: relative;
+    width: 300px;
+    height: 25px;
+    top: 80px;
+    border-radius: 10px;
+    border: none;
+}
+.contact-form-text-input-c {
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    max-height: 200px;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 0;
+
+
+}
+.contact-button {
+    border-radius: 3px;
+    border: none;
+    background-color: #F6926C ;
+    color: #F7F2DD;
+    width: 140px;
+    height: 25px;
+    margin: 10px ;
+}
+
+.contact-small-a {
+    background-color: #F6926C;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    z-index: -100;
+    top: 850px;
+    right: 55vw;
+}
+
+.contact-small-b {
+    background-color: #F6926C;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    z-index: 1;
+    left: 55vw;
+
+    z-index: -100;
+
+   
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.faces{
+    position: relative;
+    bottom: 7px;
+}
+
+.face{
+    width: 100px;
+    position: absolute;
+
+}
+
+.face-1{
+    animation: 4s infinite faces;
+    opacity: 0%;
+    
+
+}
+
+.face-2{
+    animation: 4s infinite faces;
+    animation-delay: 1s;
+    opacity: 0%;
+
+}
+
+.face-3{
+    animation: 4s infinite faces;
+    animation-delay: 2s;
+    opacity: 0%;
+
+}
+
+.face-4{
+    animation: 4s infinite faces;
+    animation-delay: 3s;
+    opacity: 0%;
+    width: 150px;
+    position: absolute;
+    top: -40px;
+    left: -25px;
+    
+
+}
+
+@keyframes faces{
+
+    from{
+        opacity: 100%;
+    }
+
+    25%{
+        opacity: 100%;
+
+    }
+
+    26%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  
+
+}
 
