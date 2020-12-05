@@ -5,6 +5,7 @@ body{
     background-color: #F7F2DD;
     overflow-x: hidden;
     font-family: 'Markazi Text', serif;
+
 }
 
 
@@ -50,7 +51,7 @@ font-family: 'Monoton', cursive; */
 .square-4{
     width: 10000px;
     top: 1225px;
-    height: 75px;;
+    height: 75px;
     background-color: #2B9041;
     position: absolute;
 }
@@ -92,7 +93,7 @@ font-family: 'Monoton', cursive; */
     align-items: center;
     display: flex;
     width: 10000px;
-    animation: animateScroll 8s linear infinite;
+    animation: animateScroll 10s linear infinite;
 }
 
 button{
@@ -147,7 +148,7 @@ button:focus{
     align-items: center;
     display: flex;
     width: 3000px;
-    animation: animateScroll2 8s linear infinite;
+    animation: animateScroll2 10s linear infinite;
 }
 
 @keyframes animateScroll2 {
@@ -604,12 +605,12 @@ font-family: 'Monoton', cursive;
 .copy{
 
 
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 .nav-copy{
     position: fixed;
-    bottom: 0;
+    bottom: 50px;
     font-size: 14px;
 }
 
@@ -730,7 +731,7 @@ font-family: 'Monoton', cursive;
 
         width: 1050px;
         height: 500px;
-        top: -150px;
+        top: -200px;
         max-width: none;
     }
 }
@@ -878,7 +879,6 @@ form{
     animation: 4s infinite faces;
     animation-delay: 2s;
     opacity: 0%;
-
 }
 
 .face-4{
@@ -889,8 +889,17 @@ form{
     position: absolute;
     top: -40px;
     left: -25px;
-    
+}
 
+.loader{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 36px;
+    color: #2B9041;
+    font-weight: 100;
 }
 
 @keyframes faces{
@@ -917,7 +926,54 @@ form{
 
 
 @media only screen and (min-width: 800px) {
-  
-
 }
+
+
+
+.loading-screen{
+    width: 100vw;
+    height: 200vh;
+    background-color: #F7F2DD;
+    position: absolute;
+    top: 0;
+    z-index: 1300;
+    overflow-x: none;
+    
+}
+
+.loading-screen2{
+    width: 100vw;
+    height: 200vh;
+    background-color: #E86292;
+    position: absolute;
+    top: 0;
+    z-index: 1200;
+    
+}
+
+.loading-screen3{
+    width: 100vw;
+    height: 200vh;
+    background-color: #569C88; 
+    position: absolute;
+    top: 0;
+    z-index: 1100;
+    
+}
+
+.loading-screen4{
+    width: 100vw;
+    height: 200vh;
+    background-color: #F7C025;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+   
+}
+
+
+.loading-screen-div{
+   
+}
+
 

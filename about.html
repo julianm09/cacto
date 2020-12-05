@@ -1,334 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- start of navbar -->
     <header>
-        <div class="logo-container">
-            <a href="./index.html"><img class="logo" src="./img/cacto-logo.svg"></a>
-        </div>
-    
-        <div class="navbar">
-            <a href="./about.html"  class="link yellow">About</a>
-            <a href="./contact.html" class="link blue">Contact</a>
-            <a href="./location.html" class="link pink">Location</a>
-        </div>
-        
-    
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo.svg"
+        /></a>
+      </div>
+
+      <div class="navbar">
+        <a href="./about.html" class="link yellow">About</a>
+        <a href="./contact.html" class="link blue">Contact</a>
+        <a href="./location.html" class="link pink">Location</a>
+      </div>
     </header>
-    
+
     <div class="navbar-mobile">
-        
-        <a class="menu"><i  data-feather="menu"></i></a>
+      <a class="menu"><i data-feather="menu"></i></a>
     </div>
-    
+
     <div class="overlay">
-        <div class="logo-container">
-            <a href="./index.html"><img class="logo" src="./img/cacto-logo-sand.svg"></a>
-        </div>
-    
-        <div class="navbar-mobile">
-            <a class="menu-close"><i  data-feather="x"></i></a>
-        </div>
-    
-        <div class="mobile-links">
-    
-            <a class="mobile-link" href="./about.html">About</a>
-            <a class="mobile-link" href="./contact.html">Contact</a>
-            <a class="mobile-link" href="./location.html">Location</a>
-            
-            <div class="nav-icons">
-            <a class="mobile-link" href="#"><i class="mobile-link" data-feather="instagram"></i></a>
-            <a class="mobile-link" href="#"><i class="mobile-link" data-feather="youtube"></i></a>
-            </div>
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo-sand.svg"
+        /></a>
+      </div>
 
-            <span class="nav-copy">&copy cacto 2020</span>
+      <div class="navbar-mobile">
+        <a class="menu-close"><i data-feather="x"></i></a>
+      </div>
 
+      <div class="mobile-links">
+        <a class="mobile-link" href="./about.html">About</a>
+        <a class="mobile-link" href="./contact.html">Contact</a>
+        <a class="mobile-link" href="./location.html">Location</a>
 
+        <div class="nav-icons">
+          <a class="mobile-link" href="#"
+            ><i class="mobile-link" data-feather="instagram"></i
+          ></a>
+          <a class="mobile-link" href="#"
+            ><i class="mobile-link" data-feather="youtube"></i
+          ></a>
         </div>
-    
-        
-    
+
+        <span class="nav-copy">&copy cacto 2020</span>
+      </div>
     </div>
-    
+
     <script>
-        const menu = document.querySelector('.menu')
-        const overlay = document.querySelector('.overlay')
-        const close = document.querySelector('.menu-close')
-        const body = document.querySelector('body')
-    
-        menu.addEventListener('click', () =>{
-    
-            if(overlay.style.display='none'){
-                overlay.style.display='flex'
-                body.style.overflowY='hidden'
-    
-            } 
-            
-        })
-    
-        close.addEventListener('click', () =>{
-    
-    if(overlay.style.display='flex'){
-        overlay.style.display='none'
-        body.style.overflowY='auto'
-    
-    } 
-    
-    })
+      const menu = document.querySelector(".menu");
+      const overlay = document.querySelector(".overlay");
+      const close = document.querySelector(".menu-close");
+      const body = document.querySelector("body");
+
+      menu.addEventListener("click", () => {
+        if ((overlay.style.display = "none")) {
+          overlay.style.display = "flex";
+          body.style.overflowY = "hidden";
+        }
+      });
+
+      close.addEventListener("click", () => {
+        if ((overlay.style.display = "flex")) {
+          overlay.style.display = "none";
+          body.style.overflowY = "auto";
+        }
+      });
     </script>
-    
+
     <!-- end of navbar -->
 
+    <div class="about-page">
+      <div class="card-1">
+        <p class="about-cacto">
+          Cacto is a Vancouvers new cactus boutique. not just any cactus shop.
+          Cacto is a lifestyle. You want to stay here forever. <br />
+          <br />
+          Cacto is love.
+        </p>
+      </div>
+    </div>
 
+    <div class="footer">
+      <i class="icon" data-feather="instagram"></i>
+      <i class="icon" data-feather="youtube"></i>
 
+      <span class="copy">&copy cacto 2020</span>
+    </div>
 
-
-<div class="about-page">
-
-
-<div class="card-1">
-
-
-
-   <p class="about-cacto">Cacto is a Vancouvers new cactus boutique. not just any cactus shop. Cacto is a lifestyle. You want to stay here forever. <br/> <br/> Cacto is love.</p> 
-
-</div>
-
-
-</div>
-
-<div class="footer">
-
-
-
-    <i class="icon" data-feather="instagram"></i>
-    <i class="icon"  data-feather="youtube"></i>
-
-    <span class="copy">&copy cacto 2020</span>
 
     
-</div>
 
+    <!-- three.min.js r87 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
 
+    <!-- GLTFLoader.js -->
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
 
+    <script>
+      var scene, renderer;
+      var camera;
+      var mesh;
 
+      var isMouseDown = false;
 
+      function init() {
+        scene = new THREE.Scene();
 
+        camera = new THREE.PerspectiveCamera(
+          55,
+          window.innerWidth / window.innerHeight,
+          0.1,
+          1000
+        );
+        camera.position.z = 50;
+        camera.position.y = 0;
 
+        renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
 
+        renderer.setClearColor(0x000000, 0);
+        renderer.gammaOutput = true;
 
+        var light = new THREE.DirectionalLight("#c1582d", 1);
+        var ambient = new THREE.AmbientLight("#85b2cd");
+        light.position.set(0, -70, 100).normalize();
+        scene.add(light);
+        scene.add(ambient);
 
+        var texture = new THREE.Texture();
+        var manager = new THREE.LoadingManager();
+        manager.onProgress = function (item, loaded, total) {};
+        var onProgress = function (xhr) {};
+        var onError = function (xhr) {};
 
+        var loader = new THREE.GLTFLoader();
 
+        loader.load(
+          "./img/cacto.glb",
+          function (gltf) {
+            mesh = gltf.scene;
+            mesh.scale.set(10, 10, 10);
+            scene.add(mesh);
+          },
 
+          function (xhr) {
+            console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+          },
 
+          function (error) {
+            console.log("An error happened");
+          }
+        );
 
+        render();
+      }
 
+      const animate = function () {
+        requestAnimationFrame(animate);
 
+        mesh.rotation.x += 0.0;
+        mesh.rotation.y += 0.0004;
 
+        renderer.render(scene, camera);
+      };
 
+      function render() {
+        requestAnimationFrame(render);
+        renderer.render(scene, camera);
+        animate();
+      }
 
+      window.addEventListener("DOMContentLoaded", init);
+    </script>
 
-
-
-
-
-<!-- three.min.js r87 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
-
-<!-- GLTFLoader.js -->
-<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
-
-<script>
-
-    //■glTFファイルの設定
-//glTFファイルを置いた GitHub のURL
-//https://github.com/siouxcitizen/3DModel/blob/master/yuusha.gltf
-//
-//rawgit.com 用に↑上記URLを編集（どこかのサイトでみた手順の実行）
-//https://github.com/siouxcitizen/3DModel/master/yuusha.gltf
-//
-//編集した↑上記URLより rawgit.com で生成したURLs  
-// Production 用URL
-//https://cdn.rawgit.com/siouxcitizen/3DModel/a1c2e475/yuusha.gltf
-// Development 用URL
-//https://rawgit.com/siouxcitizen/3DModel/master/yuusha.gltf
-//
-//
-//■glTFファイル読込関連の参考サイト
-//GLTFLoader
-//https://threejs.org/docs/#examples/loaders/GLTFLoader
-//
-//MagicaVoxelの3DモデルをBlenderに持っていく 
-//http://b00.sakura.ne.jp/main/gamecreate/2015/10/25/post-130/
-//
-//BlenderでFBX形式をglTF形式に変換してThree.jsでアニメーションさせる （1/2）
-//https://ryo620.org/blog/2018/02/to-gltf-from-fbx-by-blender/
-//
-//BlenderでFBX形式をglTF形式に変換してThree.jsでアニメーションさせる （2/2）
-//https://ryo620.org/blog/2018/02/threejs-animation/
-//
-
-var scene, renderer;
-var camera;
-var mesh;
-
-var isMouseDown = false;
- 
-function init() {
-    
-    //シーンを作成
-    scene = new THREE.Scene(); 
-    
-    //カメラを作成
-    camera = new THREE.PerspectiveCamera( 55, window.innerWidth/window.innerHeight, 0.1, 1000 ); 
-    camera.position.z =50; 
-    camera.position.y = 0; 
-    
-    //レンダラーを作成
-    renderer = new THREE.WebGLRenderer( {alpha: true }); 
-    renderer.setSize( window.innerWidth, window.innerHeight ); 
-    document.body.appendChild( renderer.domElement ); 
-    //背景色を設定
-    renderer.setClearColor(0x000000, 0); 
-    renderer.gammaOutput = true;
-    
-    //光源を作成
-    var light = new THREE.DirectionalLight("#c1582d", 1);
-    var ambient = new THREE.AmbientLight("#85b2cd");
-    light.position.set( 0, -70, 100 ).normalize();
-    scene.add(light);
-    scene.add(ambient);
-
-    var texture = new THREE.Texture();
-    var manager = new THREE.LoadingManager();
-    manager.onProgress = function ( item, loaded, total ) {};
-    var onProgress = function ( xhr ) {};
-    var onError = function ( xhr ) {};
-
-    // 3Dモデル用テクスチャ画像の読込
-    var loader = new THREE.GLTFLoader();
-
-    // Load a glTF resource
-    loader.load(
-        // resource URL
-        './img/cacto.glb',
-        // called when the resource is loaded
-        function ( gltf ) {
-
-                mesh = gltf.scene;
-                mesh.scale.set( 10, 10, 10 );
-                scene.add( mesh );
-    
-                //scene.add( gltf.scene );
-
-                //gltf.animations; // Array<THREE.AnimationClip>
-                //gltf.scene; // THREE.Scene
-                //gltf.scenes; // Array<THREE.Scene>
-                //gltf.cameras; // Array<THREE.Camera>
-                //gltf.asset; // Object
-
-        },
-        // called when loading is in progresses
-        function ( xhr ) {
-
-                console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-
-        },
-        // called when loading has errors
-        function ( error ) {
-
-                console.log( 'An error happened' );
-
-        }
-    );
-    
-/*     document.addEventListener("mousedown", onMouseDown);
-    document.addEventListener("touchstart", onMouseDown);
-    document.addEventListener("mouseup", onMouseUp);
-    document.addEventListener("touchend", onMouseUp);
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("touchmove", onMouseMove); */
-
-    render();   
-}
-
-const animate = function () {
-				requestAnimationFrame( animate );
-
-				mesh.rotation.x += 0.0;
-				mesh.rotation.y += 0.0004;
-
-				renderer.render( scene, camera );
-			};
-
-function render() {
-
-    requestAnimationFrame( render ); 
-    renderer.render(scene, camera); 
-    animate();
-}
-
-
-
-
-/* // マウスを押したとき
-function onMouseDown(event) {
-    isMouseDown = true;
-}
-
-// マウスを動かした時
-function onMouseMove(event) {
-    if (isMouseDown) {
-        // 3DモデルをX軸とY軸方向に回転させます
-        if ( mesh ) {
-            mesh.rotation.y = getMouseX(event)/50;
-            mesh.rotation.x = getMouseY(event)/50;
-
-        }
-    }
-}
-
-// マウスを離したとき
-function onMouseUp(event) {
-    isMouseDown = false;
-}
-
-function getMouseX(event) {
-    if (event.type.indexOf("touch") == -1)
-        return event.clientX;
-    else
-        return event.touches[0].clientX;
-}
-
-function getMouseY(event) {
-    if (event.type.indexOf("touch") == -1)
-        return event.clientY;
-    else
-        return event.touches[0].clientY;
-} */
-
-window.addEventListener('DOMContentLoaded', init);
-
-
-
-
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-<script>
-    feather.replace()
-  </script>
-</body>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>

@@ -1,166 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- start of navbar -->
     <header>
-        <div class="logo-container">
-            <a href="./index.html"><img class="logo" src="./img/cacto-logo.svg"></a>
-        </div>
-    
-        <div class="navbar">
-            <a href="./about.html"  class="link yellow">About</a>
-            <a href="./contact.html" class="link blue">Contact</a>
-            <a href="./location.html" class="link pink">Location</a>
-        </div>
-        
-    
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo.svg"
+        /></a>
+      </div>
+
+      <div class="navbar">
+        <a href="./about.html" class="link yellow">About</a>
+        <a href="./contact.html" class="link blue">Contact</a>
+        <a href="./location.html" class="link pink">Location</a>
+      </div>
     </header>
-    
+
     <div class="navbar-mobile">
-        
-        <a class="menu"><i  data-feather="menu"></i></a>
+      <a class="menu"><i data-feather="menu"></i></a>
     </div>
-    
+
     <div class="overlay">
-        <div class="logo-container">
-            <a href="./index.html"><img class="logo" src="./img/cacto-logo-sand.svg"></a>
-        </div>
-    
-        <div class="navbar-mobile">
-            <a class="menu-close"><i  data-feather="x"></i></a>
-        </div>
-    
-        <div class="mobile-links">
-    
-            <a class="mobile-link" href="./about.html">About</a>
-            <a class="mobile-link" href="./contact.html">Contact</a>
-            <a class="mobile-link" href="./location.html">Location</a>
-            
-            <div class="nav-icons">
-            <a class="mobile-link" href="#"><i class="mobile-link" data-feather="instagram"></i></a>
-            <a class="mobile-link" href="#"><i class="mobile-link" data-feather="youtube"></i></a>
-            </div>
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo-sand.svg"
+        /></a>
+      </div>
 
-            <span class="nav-copy">&copy cacto 2020</span>
+      <div class="navbar-mobile">
+        <a class="menu-close"><i data-feather="x"></i></a>
+      </div>
 
+      <div class="mobile-links">
+        <a class="mobile-link" href="./about.html">About</a>
+        <a class="mobile-link" href="./contact.html">Contact</a>
+        <a class="mobile-link" href="./location.html">Location</a>
 
+        <div class="nav-icons">
+          <a
+            class="mobile-link"
+            target="_blank"
+            href="https://www.instagram.com/glian.palma/"
+            ><i class="mobile-link" data-feather="instagram"></i
+          ></a>
+          <a
+            class="mobile-link"
+            target="_blank"
+            href="https://youtu.be/RYrthLmYi6c"
+            ><i class="mobile-link" data-feather="youtube"></i
+          ></a>
         </div>
-        
-    
+
+        <span class="nav-copy">&copy cacto 2020</span>
+      </div>
     </div>
-
 
     <div class="footer">
+      <a target="_blank" href="https://www.instagram.com/glian.palma/"
+        ><i class="icon" data-feather="instagram"></i
+      ></a>
+      <a target="_blank" href="https://youtu.be/RYrthLmYi6c"
+        ><i class="icon" data-feather="youtube"></i
+      ></a>
 
-
-
-        <i class="icon" data-feather="instagram"></i>
-        <i class="icon"  data-feather="youtube"></i>
-    
-        <span class="copy">&copy cacto 2020</span>
-    
-        
+      <span class="copy">&copy cacto 2020</span>
     </div>
-    
+
     <script>
-        const menu = document.querySelector('.menu')
-        const overlay = document.querySelector('.overlay')
-        const close = document.querySelector('.menu-close')
-        const body = document.querySelector('body')
-    
-        menu.addEventListener('click', () =>{
-    
-            if(overlay.style.display='none'){
-                overlay.style.display='flex'
-                body.style.overflowY='hidden'
-    
-            } 
-            
-        })
-    
-        close.addEventListener('click', () =>{
-    
-    if(overlay.style.display='flex'){
-        overlay.style.display='none'
-        body.style.overflowY='auto'
-    
-    } 
-    
-    })
+      const menu = document.querySelector(".menu");
+      const overlay = document.querySelector(".overlay");
+      const close = document.querySelector(".menu-close");
+      const body = document.querySelector("body");
+
+      menu.addEventListener("click", () => {
+        if ((overlay.style.display = "none")) {
+          overlay.style.display = "flex";
+          body.style.overflowY = "hidden";
+        }
+      });
+
+      close.addEventListener("click", () => {
+        if ((overlay.style.display = "flex")) {
+          overlay.style.display = "none";
+          body.style.overflowY = "auto";
+        }
+      });
     </script>
-    
+
     <!-- end of navbar -->
 
     <!-- code here -->
 
-
-
     <div class="location-page">
-    
-    <h2 class="location-name">Location</h2>
-<div class="location-container">
-    <h2 class="find-us">Come Find Us</h2>
-    <img class="location-image" src="./img/store-front-dark.png" alt="Cacto Store Front">
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.6408403168343!2d-123.16402678398215!3d49.264253079329386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673ae07535f7d%3A0x6933752bb61d334!2s2485%20W%20Broadway%2C%20Vancouver%2C%20BC%20V6K%202E8!5e0!3m2!1sen!2sca!4v1606952689463!5m2!1sen!2sca" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
-<div class="location-bar">
-    <p class="location-text">
-        9pm - 5pm : Monday-Friday
-        <br>
-        Closed : Sunday & Saturday
-        <br>
-        <br>
-        (604) - 756 - 6543
-        <br>
-        <br>
-        2485 Broadway W 414
-        <br>
-        Vancouver BC
-        <br>
-        V6K 2E8
-
-    </p>
-
-</div>
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <h2 class="location-name">Location</h2>
+      <div class="location-container">
+        <h2 class="find-us">Come Find Us</h2>
+        <img
+          class="location-image"
+          src="./img/store-front-dark.png"
+          alt="Cacto Store Front"
+        />
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.6408403168343!2d-123.16402678398215!3d49.264253079329386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673ae07535f7d%3A0x6933752bb61d334!2s2485%20W%20Broadway%2C%20Vancouver%2C%20BC%20V6K%202E8!5e0!3m2!1sen!2sca!4v1606952689463!5m2!1sen!2sca"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="location-bar">
+        <p class="location-text">
+          9pm - 5pm : Monday-Friday
+          <br />
+          Closed : Sunday & Saturday
+          <br />
+          <br />
+          (604) - 756 - 6543
+          <br />
+          <br />
+          2485 Broadway W 414
+          <br />
+          Vancouver BC
+          <br />
+          V6K 2E8
+        </p>
+      </div>
+    </div>
 
     <!-- end here -->
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-<script>
-    feather.replace()
-  </script>
-
-  
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>

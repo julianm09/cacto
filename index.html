@@ -1,130 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Markazi+Text:wght@400;500;600;700&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-
-
-
-
+  </head>
+  <body>
     <!-- start of navbar -->
-<header>
-    <div class="logo-container">
-        <a href="./index.html"><img class="logo" src="./img/cacto-logo.svg"></a>
-    </div>
+    <header>
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo.svg"
+        /></a>
+      </div>
 
-    <div class="navbar">
-        <a href="./about.html"  class="link yellow">About</a>
+      <div class="navbar">
+        <a href="./about.html" class="link yellow">About</a>
         <a href="./contact.html" class="link blue">Contact</a>
         <a href="./location.html" class="link pink">Location</a>
-    </div>
-    
-
-</header>
-
-<div class="navbar-mobile">
-    
-    <a class="menu"><i  data-feather="menu"></i></a>
-</div>
-
-<div class="overlay">
-    <div class="logo-container">
-        <a href="./index.html"><img class="logo" src="./img/cacto-logo-sand.svg"></a>
-    </div>
+      </div>
+    </header>
 
     <div class="navbar-mobile">
-        <a class="menu-close"><i  data-feather="x"></i></a>
+      <a class="menu"><i data-feather="menu"></i></a>
     </div>
 
-    <div class="mobile-links">
-    
+    <div class="overlay">
+      <div class="logo-container">
+        <a href="./index.html"
+          ><img class="logo" src="./img/cacto-logo-sand.svg"
+        /></a>
+      </div>
+
+      <div class="navbar-mobile">
+        <a class="menu-close"><i data-feather="x"></i></a>
+      </div>
+
+      <div class="mobile-links">
         <a class="mobile-link" href="./about.html">About</a>
         <a class="mobile-link" href="./contact.html">Contact</a>
         <a class="mobile-link" href="./location.html">Location</a>
-        
+
         <div class="nav-icons">
-        <a class="mobile-link" href="#"><i class="mobile-link" data-feather="instagram"></i></a>
-        <a class="mobile-link" href="#"><i class="mobile-link" data-feather="youtube"></i></a>
+          <a
+            class="mobile-link"
+            target="_blank"
+            href="https://www.instagram.com/glian.palma/"
+            ><i class="mobile-link" data-feather="instagram"></i
+          ></a>
+          <a
+            class="mobile-link"
+            target="_blank"
+            href="https://youtu.be/RYrthLmYi6c"
+            ><i class="mobile-link" data-feather="youtube"></i
+          ></a>
         </div>
 
         <span class="nav-copy">&copy cacto 2020</span>
-
-
+      </div>
     </div>
 
-    
+    <script>
+      const menu = document.querySelector(".menu");
+      const overlay = document.querySelector(".overlay");
+      const close = document.querySelector(".menu-close");
+      const body = document.querySelector("body");
 
-</div>
+      menu.addEventListener("click", () => {
+        if ((overlay.style.display = "none")) {
+          overlay.style.display = "flex";
+          body.style.overflowY = "hidden";
+        }
+      });
 
-<script>
-    const menu = document.querySelector('.menu')
-    const overlay = document.querySelector('.overlay')
-    const close = document.querySelector('.menu-close')
-    const body = document.querySelector('body')
+      close.addEventListener("click", () => {
+        if ((overlay.style.display = "flex")) {
+          overlay.style.display = "none";
+          body.style.overflowY = "auto";
+        }
+      });
+    </script>
 
-    menu.addEventListener('click', () =>{
+    <!-- end of navbar -->
 
-        if(overlay.style.display='none'){
-            overlay.style.display='flex'
-            body.style.overflowY='hidden'
+    <div class="square"></div>
+    <div class="square-2"></div>
+    <div class="square-3"></div>
+    <div class="square-4"></div>
+    <div class="square-5"></div>
 
-        } 
-        
-    })
+    <div class="kaiten"></div>
 
-    close.addEventListener('click', () =>{
+    <div class="footer">
+      <a target="_blank" href="https://www.instagram.com/glian.palma/"
+        ><i class="icon" data-feather="instagram"></i
+      ></a>
+      <a target="_blank" href="https://youtu.be/RYrthLmYi6c"
+        ><i class="icon" data-feather="youtube"></i
+      ></a>
 
-if(overlay.style.display='flex'){
-    overlay.style.display='none'
-    body.style.overflowY='auto'
+      <span class="copy">&copy cacto 2020</span>
+    </div>
 
-} 
+    <div class="loading-screen-div">
 
-})
-</script>
+    <div class="loading-screen">
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 519.86 564.35"
+      >
+        <defs>
+          <style>
+            .cls-1,
+            .cls-2,
+            .cls-3 {
+              fill: none;
+              stroke-miterlimit: 10;
+            }
+            .cls-1 {
+              stroke: #2b9041;
+            }
+          </style>
+        </defs>
+        <path
+          class="cls-1"
+          d="M157.18 409.79a256.53 256.53 0 010-201.49q20.61-48 55.35-82.72t82.72-55.35a256.53 256.53 0 01201.49 0q48 20.61 82.73 55.35t55.35 82.72a256.53 256.53 0 010 201.49q-20.61 48-55.35 82.73t-82.73 55.35a256.53 256.53 0 01-201.49 0q-48-20.61-82.72-55.35t-55.35-82.73zm19-193.41a236.87 236.87 0 000 185.34q18.9 44.28 50.9 76.28t76.25 50.87a236.87 236.87 0 00185.34 0Q532.92 510 564.92 478t50.87-76.25a236.87 236.87 0 000-185.34q-18.87-44.25-50.87-76.25t-76.25-50.9a236.75 236.75 0 00-185.34 0q-44.26 18.87-76.25 50.87t-50.87 76.25zm31.16 201.92q-29.26-50.16-29.26-109.25t29.26-109.25a216.94 216.94 0 0179.41-79.41Q336.91 91.14 396 91.13t109.25 29.26a216.94 216.94 0 0179.41 79.41q29.25 50.2 29.26 109.25T584.66 418.3a216.94 216.94 0 01-79.41 79.41Q455.09 527 396 527t-109.25-29.29a216.94 216.94 0 01-79.41-79.41zm7.06-185.93a196.58 196.58 0 000 153.35q15.57 36.61 41.94 63t63 41.94a196.58 196.58 0 00153.35 0q36.61-15.57 63-41.94t41.94-63a196.58 196.58 0 000-153.35q-15.57-36.6-41.94-63t-63-41.94a196.58 196.58 0 00-153.35 0q-36.6 15.57-63 41.94t-41.94 63zm28.82 165.17a177.5 177.5 0 010-177 174.82 174.82 0 0164.29-64.29 177.5 177.5 0 01177 0 174.9 174.9 0 0164.29 64.29 177.5 177.5 0 010 177 174.8 174.8 0 01-64.29 64.28 177.44 177.44 0 01-177 0 174.72 174.72 0 01-64.29-64.28zm18-166.61a156.45 156.45 0 000 156.24 155.38 155.38 0 0056.64 56.64 156.45 156.45 0 00156.24 0 155.54 155.54 0 0056.64-56.64 156.45 156.45 0 000-156.24 155.69 155.69 0 00-56.64-56.64 156.45 156.45 0 00-156.24 0 155.54 155.54 0 00-56.62 56.64zm10.52 130.44a133.73 133.73 0 010-104.64 133.29 133.29 0 0171.92-71.92 133.73 133.73 0 01104.64 0 133.29 133.29 0 0171.92 71.92 133.73 133.73 0 010 104.64 133.29 133.29 0 01-71.92 71.92 133.73 133.73 0 01-104.64 0 133.29 133.29 0 01-71.92-71.92zm43.53-133q-33.45 33.43-33.44 80.71t33.44 80.71q33.46 33.42 80.73 33.41t80.71-33.44q33.44-33.43 33.44-80.71t-33.44-80.71Q443.26 194.91 396 194.9t-80.71 33.44z"
+          transform="translate(-136.07 -14.63)"
+        />
+        <path
+          class="cls-1"
+          d="M273.72 34.99h-27.59L259.93 11l13.79 23.99zM205.48 125.82l-25.5 10.55 3.58-27.45 21.92 16.9zM61.73 126.45l-16.61 22.03-10.69-25.34 27.3 3.31zM466.56 137.1l-17.71-21.16 27.21-4.78-9.5 25.94zM427.45 236.88l-10.93-25.33 27.43 3.2-16.5 22.13z"
+        />
+        <path
+          class="cls-1"
+          d="M655.43 309.05c0 143.28-116.15 259.43-259.43 259.43S136.57 452.33 136.57 309.05z"
+          transform="translate(-136.07 -14.63)"
+        />
+        <path
+          class="cls-2"
+          d="M157.18 399.79a256.53 256.53 0 010-201.49q20.61-48 55.35-82.72t82.72-55.35a256.53 256.53 0 01201.49 0q48 20.61 82.73 55.35t55.35 82.72a256.53 256.53 0 010 201.49q-20.61 48-55.35 82.73t-82.73 55.35a256.53 256.53 0 01-201.49 0q-48-20.61-82.72-55.35t-55.35-82.73zm19-193.41a236.87 236.87 0 000 185.34q18.9 44.28 50.9 76.28t76.25 50.87a236.87 236.87 0 00185.34 0Q532.92 500 564.92 468t50.87-76.25a236.87 236.87 0 000-185.34q-18.87-44.25-50.87-76.25t-76.25-50.9a236.75 236.75 0 00-185.34 0q-44.26 18.87-76.25 50.87t-50.87 76.25zm31.16 201.92q-29.26-50.16-29.26-109.25t29.26-109.25a216.94 216.94 0 0179.41-79.41Q336.91 81.14 396 81.13t109.25 29.26a216.94 216.94 0 0179.41 79.41q29.25 50.2 29.26 109.25T584.66 408.3a216.94 216.94 0 01-79.41 79.41Q455.09 517 396 517t-109.25-29.29a216.94 216.94 0 01-79.41-79.41zm7.06-185.93a196.58 196.58 0 000 153.35q15.57 36.61 41.94 63t63 41.94a196.58 196.58 0 00153.35 0q36.61-15.57 63-41.94t41.94-63a196.58 196.58 0 000-153.35q-15.57-36.6-41.94-63t-63-41.94a196.58 196.58 0 00-153.35 0q-36.6 15.57-63 41.94t-41.94 63zm28.82 165.17a177.5 177.5 0 010-177 174.82 174.82 0 0164.29-64.29 177.5 177.5 0 01177 0 174.9 174.9 0 0164.29 64.29 177.5 177.5 0 010 177 174.8 174.8 0 01-64.29 64.28 177.44 177.44 0 01-177 0 174.72 174.72 0 01-64.29-64.28zm18-166.61a156.45 156.45 0 000 156.24 155.38 155.38 0 0056.64 56.64 156.45 156.45 0 00156.24 0 155.54 155.54 0 0056.64-56.64 156.45 156.45 0 000-156.24 155.69 155.69 0 00-56.64-56.64 156.45 156.45 0 00-156.24 0 155.54 155.54 0 00-56.62 56.64zm10.52 130.44a133.73 133.73 0 010-104.64 133.29 133.29 0 0171.92-71.92 133.73 133.73 0 01104.64 0 133.29 133.29 0 0171.92 71.92 133.73 133.73 0 010 104.64 133.29 133.29 0 01-71.92 71.92 133.73 133.73 0 01-104.64 0 133.29 133.29 0 01-71.92-71.92zm43.53-133q-33.45 33.43-33.44 80.71t33.44 80.71q33.46 33.42 80.73 33.41t80.71-33.44q33.44-33.43 33.44-80.71t-33.44-80.71Q443.26 184.91 396 184.9t-80.71 33.44z"
+          transform="translate(-136.07 -14.63)"
+        />
+        <path
+          class="cls-2"
+          d="M273.72 24.99h-27.59L259.93 1l13.79 23.99zM205.48 115.82l-25.5 10.55 3.58-27.45 21.92 16.9zM61.73 116.45l-16.61 22.03-10.69-25.34 27.3 3.31zM466.56 127.1l-17.71-21.16 27.21-4.78-9.5 25.94zM427.45 226.88l-10.93-25.33 27.43 3.2-16.5 22.13z"
+        />
+        <path
+          class="cls-2"
+          d="M655.43 299.05c0 143.28-116.15 259.43-259.43 259.43S136.57 442.33 136.57 299.05z"
+          transform="translate(-136.07 -14.63)"
+        />
+        <path
+          class="cls-3"
+          d="M157.18 419.79a256.53 256.53 0 010-201.49q20.61-48 55.35-82.72t82.72-55.35a256.53 256.53 0 01201.49 0q48 20.61 82.73 55.35t55.35 82.72a256.53 256.53 0 010 201.49q-20.61 48-55.35 82.73t-82.73 55.35a256.53 256.53 0 01-201.49 0q-48-20.61-82.72-55.35t-55.35-82.73zm19-193.41a236.87 236.87 0 000 185.34q18.9 44.28 50.9 76.28t76.25 50.87a236.87 236.87 0 00185.34 0Q532.92 520 564.92 488t50.87-76.25a236.87 236.87 0 000-185.34q-18.87-44.25-50.87-76.25t-76.25-50.9a236.75 236.75 0 00-185.34 0q-44.26 18.87-76.25 50.87t-50.87 76.25zm31.16 201.92q-29.26-50.16-29.26-109.25t29.26-109.25a216.94 216.94 0 0179.41-79.41q50.16-29.25 109.25-29.26t109.25 29.26a216.94 216.94 0 0179.41 79.41q29.25 50.2 29.26 109.25T584.66 428.3a216.94 216.94 0 01-79.41 79.41Q455.09 537 396 537t-109.25-29.29a216.94 216.94 0 01-79.41-79.41zm7.06-185.93a196.58 196.58 0 000 153.35q15.57 36.61 41.94 63t63 41.94a196.58 196.58 0 00153.35 0q36.61-15.57 63-41.94t41.94-63a196.58 196.58 0 000-153.35q-15.57-36.6-41.94-63t-63-41.94a196.58 196.58 0 00-153.35 0q-36.6 15.57-63 41.94t-41.94 63zm28.82 165.17a177.5 177.5 0 010-177 174.82 174.82 0 0164.29-64.29 177.5 177.5 0 01177 0 174.9 174.9 0 0164.29 64.29 177.5 177.5 0 010 177 174.8 174.8 0 01-64.29 64.28 177.44 177.44 0 01-177 0 174.72 174.72 0 01-64.29-64.28zm18-166.61a156.45 156.45 0 000 156.24 155.38 155.38 0 0056.64 56.64 156.45 156.45 0 00156.24 0 155.54 155.54 0 0056.64-56.64 156.45 156.45 0 000-156.24 155.69 155.69 0 00-56.64-56.64 156.45 156.45 0 00-156.24 0 155.54 155.54 0 00-56.62 56.64zm10.52 130.44a133.73 133.73 0 010-104.64 133.29 133.29 0 0171.92-71.92 133.73 133.73 0 01104.64 0 133.29 133.29 0 0171.92 71.92 133.73 133.73 0 010 104.64 133.29 133.29 0 01-71.92 71.92 133.73 133.73 0 01-104.64 0 133.29 133.29 0 01-71.92-71.92zm43.53-133q-33.45 33.43-33.44 80.71t33.44 80.71q33.46 33.42 80.73 33.41t80.71-33.44q33.44-33.43 33.44-80.71t-33.44-80.71Q443.26 204.91 396 204.9t-80.71 33.44z"
+          transform="translate(-136.07 -14.63)"
+        />
+        <path
+          class="cls-3"
+          d="M273.72 44.99h-27.59L259.93 21l13.79 23.99zM205.48 135.82l-25.5 10.55 3.58-27.45 21.92 16.9zM61.73 136.46l-16.61 22.02-10.69-25.34 27.3 3.32zM466.56 147.1l-17.71-21.16 27.21-4.78-9.5 25.94zM427.45 246.88l-10.93-25.33 27.43 3.2-16.5 22.13z"
+        />
+        <path
+          class="cls-3"
+          d="M655.43 319.05c0 143.28-116.15 259.43-259.43 259.43S136.57 462.33 136.57 319.05z"
+          transform="translate(-136.07 -14.63)"
+        />
+      </svg>
 
-<!-- end of navbar -->
+      <div class="loader">hi</div>
+    </div>
 
+    <div class="loading-screen2"></div>
+    <div class="loading-screen3"></div>
+    <div class="loading-screen4"></div>
 
-<div class="square"></div>
-<div class="square-2"></div>
-<div class="square-3"></div>
-<div class="square-4"></div>
-<div class="square-5"></div>
+  </div>
 
-<div class="kaiten">
+    <script>
+      const kaiten = document.querySelector(".kaiten");
 
-</div>
+      for (n = 1; n <= 9; n++) {
+        n % 2 == 0 ? (i = 1) : (i = 2);
 
-<div class="footer">
-
-
-
-    <a target="_blank" href="https://www.instagram.com/glian.palma/"><i class="icon" data-feather="instagram"></i></a>
-    <a target="_blank" href="https://www.instagram.com/glian.palma/"></a><i class="icon"  data-feather="youtube"></i></a>
-
-    <span class="copy">&copy cacto 2020</span>
-
-    
-</div>
-
-<script>
-
-const kaiten = document.querySelector('.kaiten')
-
-    for (n=1; n<=9; n++){
-
-(n % 2) == 0 ? i = 1 : i = 2
-
-kaiten.innerHTML += 
-
-`<a href=product${i}.html>
+        kaiten.innerHTML += `<a href=product${i}.html>
     <div class="container-${i}">
         <div class="scroll-${i}">
 
@@ -161,12 +229,88 @@ kaiten.innerHTML +=
         </div>
     </div>
 </a> 
-`
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-<script>
-    feather.replace()
-  </script>
-</body>
+`;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="./anime.min.js"></script>
+    <script>
+      feather.replace();
+
+      
+      const loadingScreen = document.querySelector('.loading-screen-div')
+
+      anime({
+        targets: ".loading-screen path",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutSine",
+        duration: 1500,
+        delay: function (el, i) {
+          return i * 250;
+        },
+        direction: "alternate",
+        loop: true,
+      });
+
+      setTimeout(function () {
+        anime({
+          targets: ".loading-screen",
+          easing: "spring(1, 80, 10, 0)",
+          translateX: -2050,
+          duration: 20000,
+        });
+      }, 1300);
+
+      setTimeout(function () {
+        anime({
+          targets: ".loading-screen2",
+          easing: "spring(1, 80, 10, 0)",
+          translateX: -2050,
+          duration: 21000,
+        });
+      }, 1400);
+
+      setTimeout(function () {
+        anime({
+          targets: ".loading-screen3",
+          easing: "spring(1, 80, 10, 0)",
+          translateX: -2050,
+          duration: 22000,
+        });
+      }, 1500);
+
+      setTimeout(function () {
+
+        
+        anime({
+          targets: ".loading-screen4",
+          easing: "spring(1, 80, 10, 0)",
+          translateX: -2050,
+          duration: 23000,
+        });
+
+        
+      }, 1600);
+
+      setTimeout(function () {
+
+      loadingScreen.style.display = 'none'
+
+    }, 1900);
+
+      var loader = document.querySelector(".loader");
+
+      anime({
+        targets: loader,
+        innerHTML: [0, 100],
+        easing: "linear",
+        round: 10,
+      });
+
+
+      
+
+
+    </script>
+  </body>
 </html>
